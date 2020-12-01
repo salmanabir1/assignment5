@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Watchlists</title>
+  <link rel="stylesheet" href="newstyle.css">
+      <script type = "text/javascript"  src = "validate.js" ></script>
+</head>
+<body>
+    <h2>HD Movies </h2>
+    
+    
+    <div class="topnav">
+      <a href="homepage.html">Home</a>
+      <a class="active" href="watchList.html">WatchList</a>
+      <img src="avatar.jpg" alt="User" class="avatar">
+          <a>Username</a>
+      <a href="loginpage.html">LogIn</a>
+      <a href="loginpage.html">LogOut</a>
+      
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search..." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        
+      </div>
+    
+    
+    
+    <div class="bg-img3" >
+                
+        
+        
+        
+  <div  class="lists">
+      <h1 class ="header">  My Watch List
+          </h1>
+
+    <br>
+     <a href="watchListDetails.html" class="btn"> Watchlist 1  </a>
+    </br>
+    <br>
+    <button onclick="delete_watchlist(this)" class="button">DELETE this</button>
+    </br>
+    
+    <br>
+     <a href="watchListDetails.html" class="btn3"> Watchlist 2  </a>
+    </br>
+    <br>
+    <button onclick="delete_watchlist(this)" class="button">DELETE this</button>
+    </br>
+    
+    <br>
+     <a href="watchListDetails.html" class="btn2"> Watchlist 3  </a>
+    </br>
+    <br>
+    <button onclick="delete_watchlist(this)" class="button">DELETE this</button>
+    </br>
+  </div>
+  
+  <div  class="lists">
+      <h1 class ="header">  Create List </h1>
+      
+   
+      <form id="watchList" class="lists" action="" method="post">
+          
+            <td style="color:black" Watchlist Name:></td>
+            
+            <label id="watchlist_msg1" class="err_msg"></label><br>
+            
+            <input placeholder="Enter WatchList Name" onkeyup="countChar(this)"  type="text" name="watchlist" size="30" />
+              <input id="submit" type="submit" class="button"  name="submit" value="Create List" />
+              <br><label id="watchlist_msg2" class="err_msg"></label>
+              <label id="watchlist_msg3" class="err_msg"></label></br>
+          </form>
+      
+      
+      
+      
+  </div>
+  <script type = "text/javascript"  src = "watchlist.js" ></script>
+  
+ </div>
+</body>
+</html>
+

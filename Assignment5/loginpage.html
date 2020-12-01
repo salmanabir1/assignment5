@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="newstyle.css">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="validate.js"> </script>
+
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+</style>
+</head>
+<body>
+
+<h2>HD Movies </h2>
+<div class="bg-img">
+    
+  <form id="Login" action="homepage.html"  method="post" class="container">
+    <h1 class="header">Login </h1>
+
+    <label for="email" id="msg_email" class="err_msg" ><b class="header">Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" >
+
+    <label for="psw" id="msg_pswd" class="err_msg"><b class="header">Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" >
+    
+    <input id="submit" type="submit"  class="btn" value="Login"/>
+        <input id="submit" type="reset"  class="btn" value="Reset" />
+        
+    
+    </form>
+    
+    <form action="signUpPage.html" class="container">
+        
+    
+    <button type="submit" class="btn2" >Sign Up</button>
+    
+    </form>
+    
+    
+    <form action="homepage.html" class="container">
+        
+    <button type="submit" class="btn3">Login As A Guest</button>
+    </form>
+    
+  
+</div>
+
+<script type = "text/javascript"  src = "login-r.js" ></script>
+
+</body>
+</html>
